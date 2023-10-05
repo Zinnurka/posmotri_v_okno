@@ -45,6 +45,18 @@ ol {
   width: 1140px;
 }
 
+.result__video-container {
+  width: 711px;
+  height: 386px;  
+}
+
+.result__video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
 .search-form {
   display: flex;
   justify-content: space-between;
@@ -61,4 +73,27 @@ ol {
 .content__list {
   height: 298px;
   overflow-y: auto; /* отвечает за отображением содержания блочного элемента по вертикали. auto - появляется скролл*/
+}
+
+.content__video-card {
+  display: flex;
+  justify-content: space-between;
+}
+
+.content__video-card-thumbnail {
+  width: 194px;
+  height: 103px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.content__list-item {
+  margin-bottom: 30px;
+  /*убрать отступ у последнего элемента*/
+}
+
+.content__video-card-description-container {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
 }
