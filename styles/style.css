@@ -61,7 +61,7 @@ ol {
 .search-form {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: flex-end;
 }
 
 .visually-hidden {
@@ -115,8 +115,30 @@ input[type=checkbox] + .search-form__pseudo-checkbox {
   vertical-align: middle;
 }
 
-button {
+.button {
+  display: flex;
+  flex-shrink: 0;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 194px;
+  height: 34px;
+  border: 1px solid #fff;
+  color: #fff;
+  font-family: inherit;
+  font-size: inherit;  
+  background-color: transparent;
   cursor: pointer;
+}
+
+.more-button {
+  width: 399px;
+  height: 34px;
+}
+
+.search-form__submit-button {  
+  width: 194px;
+  height: 34px;  
 }
 
 .content__details {
