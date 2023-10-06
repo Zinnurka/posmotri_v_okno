@@ -154,6 +154,10 @@ input[type=checkbox] + .search-form__pseudo-checkbox {
   overflow-y: auto; /* отвечает за отображением содержания блочного элемента по вертикали. auto - появляется скролл*/
 }
 
+.content__list::-webkit-scrollbar {
+  display: none;
+}
+
 .content__video-card {
   display: flex;
   justify-content: space-between;
