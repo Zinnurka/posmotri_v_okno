@@ -183,7 +183,7 @@ input[type=checkbox] + .search-form__pseudo-checkbox {
 
 .search-form__fieldset-title {
   color: #FFF;
-  font-family: "Fira Sans" Condensed;
+  font-family: inherit;
   font-weight: 400;
   font-size: 18px;
   font-style: normal;
@@ -219,7 +219,7 @@ input[type=checkbox] + .search-form__pseudo-checkbox {
 }
 
 .content__video-card-description {
-  font-family: "Fira Sans" Condensed;
+  font-family: inherit;
   font-weight: 400;
   font-size: 18px;
   font-style: normal;
