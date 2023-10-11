@@ -9,13 +9,14 @@ html {
 }
 
 .page {
-  inline-size: 1200px;
-  block-size: 100%;
+  display: grid;
   margin: auto;
   color: #fff;
   font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 18px;
   background-color: #1b1919;
+  inline-size: 1200px;  
+  block-size: 100%;
 }
 
 h1,
@@ -35,4 +36,247 @@ fieldset {
 ul,
 ol {
   list-style: none;
+}
+
+.content {
+  display: flex;
+  align-items: flex-end;
+  gap: 30px;
+  width: 1140px;
+}
+
+.result__video-container {
+  position: relative;
+  width: 711px;
+  height: 386px;  
+}
+
+.result__video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.search-form {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.search-form__fieldset {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 5px;
+  border: 0;
+}
+
+.search-form__label {
+  width: fit-content;
+}
+
+.search-form__label:hover .search-form__label-text {
+  text-decoration: underline; /*подчеркивание при наведении на родительский элемент*/
+}
+
+.visually-hidden {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  inline-size: 1px;
+  block-size: 1px;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+.search-form__textfield:focus {
+  outline: none;
+}
+
+input[type=text] {
+  width: 225px;  
+  border: 0;
+  border-top: 1px solid #FFF;
+  border-bottom: 1px solid #FFF;
+  color: #ffffffb3;
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 18px;
+  font-style: normal;
+  line-height: normal;
+  background-color: transparent;
+  appearance: none;
+}
+
+.search-form__fieldset-title {
+  color: #FFF;
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 18px;
+  font-style: normal;
+  line-height: normal;
+}
+
+.search-form__checkbox-list {
+  display: flex;
+  gap: 15px;
+}
+
+.search-form__label:has(:focus-visible) {
+  outline: 1px solid #FFF;
+}
+
+input[type=checkbox] + .search-form__pseudo-checkbox {
+  display: inline-flex;
+  gap: 5px;
+  width: 19px;
+  height: 19px;
+  border: 1px solid #fff;
+  vertical-align: middle;
+}
+
+input[type=checkbox]:checked + .search-form__pseudo-checkbox::before {
+  content: '';
+  width: 15px;
+  height: 15px;
+  margin: auto;
+  background-color: #fff;
+}
+
+.button {
+  display: flex;
+  flex-shrink: 0;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 194px;
+  height: 34px;
+  border: 1px solid #fff;
+  color: #fff;
+  font-family: inherit;
+  font-size: inherit;  
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.button:active {
+  background-color: #545050;
+}
+
+.button:hover {
+  text-decoration: underline;
+}
+
+button:focus {
+  outline: 1px solid #FFF;
+}
+
+.search-form__submit-button {  
+  width: 194px;
+  height: 34px;  
+}
+
+.content__details {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 26px;
+}
+
+.title {
+  color: #FFF;
+  font-family: Oswald;
+  font-weight: 700;
+  font-size: 75px;
+  font-style: normal;
+  line-height: 94%;
+  text-transform: uppercase;
+}
+
+.content__accent {
+  color: #545050;
+}
+
+.content__list {
+  position: relative;
+  height: 298px;
+  overflow-y: auto; /* auto - появляется скролл */
+}
+
+.content__list::-webkit-scrollbar {
+  display: none;
+}
+
+/*ТЕМПЛЕЙТЫ КАРТОЧЕК*/
+
+.content__list-item {
+  margin-bottom: 30px;
+}
+
+.content__video-card-description-container {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.content__card-link {
+  display: block;
+  margin: 2px;
+  color: #FFF;
+  text-decoration: none;
+}
+
+.content__card-link:active {
+  background-color: #545050;
+}
+
+.content__card-link:hover {
+  text-decoration: underline;
+}
+
+.content__card-link:focus {
+  outline: none;
+}
+
+.content__card-link:focus-visible {
+  outline: 1px solid #fff;
+}
+
+.content__card-link_current {
+  background-color: #545050;
+}
+
+.content__video-card {
+  display: flex;
+  justify-content: space-between;
+}
+
+.content__video-card-title {    
+    font-family: Oswald;
+    font-weight: 700;
+    font-size: 30px;
+    font-style: normal;
+    line-height: 100%;
+    text-transform: uppercase;
+}
+
+.content__video-card-description {
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 18px;
+  font-style: normal;
+  line-height: 16.2px; 
+}
+
+.content__video-card-thumbnail {
+  width: 194px;
+  height: 103px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.more-button {
+  width: 399px;
+  height: 34px;
 }
