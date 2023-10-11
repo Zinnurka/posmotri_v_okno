@@ -91,6 +91,14 @@ ol {
   width: fit-content;
 }
 
+.search-form__textfield:focus {
+  outline: none;
+}
+
+.search-form__label:has(:focus-visible) {
+  outline: 1px solid #FFF;
+}
+
 input[type=text] {
   width: 225px;  
   border: 0;
