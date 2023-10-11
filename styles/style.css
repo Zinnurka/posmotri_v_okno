@@ -160,6 +160,19 @@ input[type=checkbox]:checked + .search-form__pseudo-checkbox::before {
   cursor: pointer;
 }
 
+.button:active {
+  background-color: #545050
+}
+
+.button:hover {
+  text-decoration: underline;
+}
+
+button:focus {
+  outline: 1px solid #FFF;
+}
+
+
 .search-form__submit-button {  
   width: 194px;
   height: 34px;  
@@ -196,11 +209,12 @@ input[type=checkbox]:checked + .search-form__pseudo-checkbox::before {
   display: none;
 }
 
+/*ТЕМПЛЕЙТЫ КАРТОЧЕК*/
+
 .content__list-item {
   margin-bottom: 30px;
   /*убрать отступ у последнего элемента*/
 }
-
 
 .content__video-card-description-container {
   display: flex;
