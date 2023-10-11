@@ -64,6 +64,15 @@ ol {
   align-items: flex-end;
 }
 
+.search-form__fieldset-title {
+  color: #FFF;
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 18px;
+  font-style: normal;
+  line-height: normal;
+}
+
 .visually-hidden {
   position: absolute;
   overflow: hidden;
@@ -121,6 +130,14 @@ input[type=checkbox] + .search-form__pseudo-checkbox {
   height: 19px;
   border: 1px solid #fff;
   vertical-align: middle;
+}
+
+input[type=checkbox]:checked + .search-form__pseudo-checkbox::before {
+  content: '';
+  margin: auto;
+  width: 15px;
+  height: 15px;
+  background-color: #fff;
 }
 
 .button {
@@ -189,14 +206,7 @@ input[type=checkbox] + .search-form__pseudo-checkbox {
   gap: 6px;
 }
 
-.search-form__fieldset-title {
-  color: #FFF;
-  font-family: inherit;
-  font-weight: 400;
-  font-size: 18px;
-  font-style: normal;
-  line-height: normal;
-}
+
 
 .title {
   color: #FFF;
