@@ -173,6 +173,10 @@ button:focus {
   outline: 1px solid #FFF;
 }
 
+.button:focus-visible {
+  outline: 1px solid #FFF;
+}
+
 .search-form__submit-button {  
   width: 194px;
   height: 34px;  
