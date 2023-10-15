@@ -152,7 +152,7 @@ input[type=checkbox]:checked + .search-form__pseudo-checkbox::before {
   align-items: center;
   gap: 10px;
   width: 194px;
-  height: 34px;
+  min-height: 34px;
   border: 1px solid #fff;
   color: #fff;
   font-family: inherit;
