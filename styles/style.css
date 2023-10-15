@@ -46,6 +46,12 @@ ol {
   margin: auto;
 }
 
+.result {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
 .result__video-container {
   position: relative;
   width: 711px;
