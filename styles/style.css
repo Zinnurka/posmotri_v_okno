@@ -278,5 +278,4 @@ input[type=checkbox]:checked + .search-form__pseudo-checkbox::before {
 
 .more-button {
   width: 399px;
-  height: 34px;
 }
