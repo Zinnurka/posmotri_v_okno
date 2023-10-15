@@ -208,10 +208,6 @@ input[type=checkbox]:checked + .search-form__pseudo-checkbox::before {
   overflow-y: auto; /* auto - появляется скролл */
 }
 
-.content__list::-webkit-scrollbar {
-  display: none;
-}
-
 /*ТЕМПЛЕЙТЫ КАРТОЧЕК*/
 
 .content__list-item {
