@@ -190,7 +190,7 @@ input[type=checkbox]:checked + .search-form__pseudo-checkbox::before {
 
 .title {
   color: #FFF;
-  font-family: Oswald;
+  font-family: Oswald, Arial, sans-serif;
   font-weight: 700;
   font-size: 75px;
   font-style: normal;
@@ -257,7 +257,7 @@ input[type=checkbox]:checked + .search-form__pseudo-checkbox::before {
 }
 
 .content__video-card-title {    
-    font-family: Oswald;
+    font-family: Oswald, Arial, sans-serif;
     font-weight: 700;
     font-size: 30px;
     font-style: normal;
