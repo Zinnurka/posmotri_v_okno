@@ -161,8 +161,9 @@ input[type=checkbox]:checked + .search-form__pseudo-checkbox::before {
   min-height: 34px;
   border: 1px solid #fff;
   color: #fff;
-  font-family: inherit;
-  font-size: inherit;  
+  font-family: inherit;  
+  font-weight: 700;
+  font-size: inherit;
   background-color: transparent;
   cursor: pointer;
 }
@@ -217,12 +218,8 @@ input[type=checkbox]:checked + .search-form__pseudo-checkbox::before {
 
 /*ТЕМПЛЕЙТЫ КАРТОЧЕК*/
 
-.content__list-item {
+.content__list-item:not(:last-of-type) {
   margin-bottom: 30px;
-}
-
-.content__list-item:nth-last-child(2) {
-  margin-bottom: 0;
 }
 
 .content__video-card-description-container {
@@ -233,6 +230,7 @@ input[type=checkbox]:checked + .search-form__pseudo-checkbox::before {
 
 .content__card-link {
   display: block;
+  width: 399px;
   margin: 2px;
   color: #FFF;
   text-decoration: none;
@@ -289,4 +287,5 @@ input[type=checkbox]:checked + .search-form__pseudo-checkbox::before {
 
 .more-button {
   width: 399px;
+  margin-top: 30px;
 }
