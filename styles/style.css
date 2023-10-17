@@ -218,12 +218,8 @@ input[type=checkbox]:checked + .search-form__pseudo-checkbox::before {
 
 /*ТЕМПЛЕЙТЫ КАРТОЧЕК*/
 
-.content__list-item {
+.content__list-item:not(:last-of-type) {
   margin-bottom: 30px;
-}
-
-.content__list-item:nth-last-child(2) {
-  margin-bottom: 0;
 }
 
 .content__video-card-description-container {
