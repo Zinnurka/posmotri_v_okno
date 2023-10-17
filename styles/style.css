@@ -161,9 +161,9 @@ input[type=checkbox]:checked + .search-form__pseudo-checkbox::before {
   min-height: 34px;
   border: 1px solid #fff;
   color: #fff;
-  font-family: inherit;
-  font-size: inherit;  
+  font-family: inherit;  
   font-weight: 700;
+  font-size: inherit;
   background-color: transparent;
   cursor: pointer;
 }
@@ -290,4 +290,5 @@ input[type=checkbox]:checked + .search-form__pseudo-checkbox::before {
 
 .more-button {
   width: 399px;
+  margin-top: 30px;
 }
