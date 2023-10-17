@@ -163,6 +163,7 @@ input[type=checkbox]:checked + .search-form__pseudo-checkbox::before {
   color: #fff;
   font-family: inherit;
   font-size: inherit;  
+  font-weight: 700;
   background-color: transparent;
   cursor: pointer;
 }
