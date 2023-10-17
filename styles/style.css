@@ -234,6 +234,7 @@ input[type=checkbox]:checked + .search-form__pseudo-checkbox::before {
 
 .content__card-link {
   display: block;
+  width: 399px;
   margin: 2px;
   color: #FFF;
   text-decoration: none;
